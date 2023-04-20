@@ -53,10 +53,7 @@ for i in "${!results[@]}"; do
   echo "Result array element $j : ${results[$i]}"
   j=$((j+1))
 done
-<<<<<<< HEAD
-=======
 
 # UC8
 sortedDescending=( $(printf "%.2f\n" "${resultArray[@]}" | sort -nr) )
 echo "Results in Descending Order: ${sortedDescending[@]}"
->>>>>>> uc8
