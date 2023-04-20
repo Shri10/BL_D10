@@ -35,3 +35,15 @@ results=( ["a + b * c"]=$result1 ["a * b + c"]=$result2 ["c + a / b"]=$result3 [
 for key in "${!results[@]}"; do
   echo "Equation: $key - Result: ${results[$key]}"
 done
+
+# UC7
+resultArray=()
+for key in "${!results[@]}"; do
+  resultArray+=("${results[$key]}")
+done
+
+j=1
+for i in "${!results[@]}"; do
+  echo "Result array element $j : ${results[$i]}"
+  j=$((j+1))
+done
