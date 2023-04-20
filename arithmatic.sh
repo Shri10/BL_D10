@@ -4,6 +4,7 @@ read -p "Enter the value of b: " b
 read -p "Enter the value of c: " c
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #UC2
 result1=$(awk "BEGIN {print $a + $b * $c}")
 echo "Result of a + b * c : " $result1
@@ -17,6 +18,8 @@ result3=$(awk "BEGIN {print $c + $a / $b}")
 echo "Result of c + a / b : " $result3
 =======
 >>>>>>> uc8
+=======
+>>>>>>> uc9
 
 # UC2
 result1=$(awk "BEGIN {print $a + $b * $c}")
@@ -30,9 +33,12 @@ result3=$(awk "BEGIN {print $c + $a / $b}")
 # UC5
 result4=$(awk "BEGIN {print $a % $b + $c}")
 <<<<<<< HEAD
+<<<<<<< HEAD
 echo "Result of a % b + c : " $result4
 =======
 >>>>>>> uc8
+=======
+>>>>>>> uc9
 
 #UC6
 declare -A results
@@ -57,3 +63,7 @@ done
 # UC8
 sortedDescending=( $(printf "%.2f\n" "${resultArray[@]}" | sort -nr) )
 echo "Results in Descending Order: ${sortedDescending[@]}"
+
+# UC9
+sortedAscending=( $(printf "%.2f\n" "${resultArray[@]}" | sort -n) )
+echo "Results in Ascending Order: ${sortedAscending[@]}"
